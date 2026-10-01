@@ -1,0 +1,19 @@
+{
+  "name": "Deutsch für Hasna",
+  "short_name": "Deutsch",
+  "description": "German A1 to B2, every word in English and Arabic. Works offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fff6fb",
+  "theme_color": "#ff90e8",
+  "lang": "en",
+  "dir": "auto",
+  "categories": ["education", "books"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
