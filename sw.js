@@ -1,6 +1,6 @@
 /* Deutsch für Hasna - offline cache.
    Bump CACHE when the page changes so viewers get the new version. */
-var CACHE = "hasna-v1";
+var CACHE = "hasna-v2";
 var ASSETS = [
   "./",
   "./index.html",
@@ -28,7 +28,10 @@ self.addEventListener("activate", function (e) {
   );
 });
 
-/* network first for the page so updates land, cache first for everything else */
+/* Audio clips are immutable (the filename is a hash of the text), so once one
+   is cached it never needs revalidating — that is what makes playback instant
+   and keeps it working with no connection.
+   Network first for the page so updates land, cache first for everything else. */
 self.addEventListener("fetch", function (e) {
   var req = e.request;
   if (req.method !== "GET") return;

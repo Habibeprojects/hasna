@@ -2,5 +2,14 @@
 .DS_Store
 node_modules
 
-.vercel
-.env*
+# local generation only - never commit these
+voices/
+*.onnx
+*.onnx.json
+*.log
+*.wav
+run_w*.bat
+run_audio.bat
+finish_audio.ps1
+audio_progress.txt
+__pycache__/
